@@ -2,6 +2,9 @@ import Photo from '../assets/img/CB37D0E3-A001-45C4-A487-01B826F19AC0_1_201_a 1.
 import LinkIcon from './LInkIcon'
 import Stack from './Stack'
 import PhotoFrame from './PhotoFrame'
+import github from '../assets/img/github.png'
+import linkedin from '../assets/img/linkedin.png'
+import medium from '../assets/img/medium.png'
 
 interface iconInfo {
     src: string
@@ -11,9 +14,9 @@ interface iconInfo {
 
 function AboutMe() {
     const iconsInfo: iconInfo[] = [
-        {src: '/img/github.png', url: 'https://github.com/liweicheng00', name: 'github'},
-        {src: '/img/linkedin.png', url: 'https://www.linkedin.com/in/liweicheng00/', name: 'linkedin'},
-        {src: '/img/medium.png', url: 'https://medium.com/@liweicheng00', name: 'medium'}
+        {src: github, url: 'https://github.com/liweicheng00', name: 'github'},
+        {src: linkedin, url: 'https://www.linkedin.com/in/liweicheng00/', name: 'linkedin'},
+        {src: medium, url: 'https://medium.com/@liweicheng00', name: 'medium'}
     ]
     const iconsRender = iconsInfo.map(info => {
         return (
